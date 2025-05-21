@@ -36,8 +36,9 @@
         loading: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif #加载动画自定义
         clock_css: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css
         clock_js: https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.js
-        ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
-        qweather_key:  # 和风天气key
+        //已失效ip_api: https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0
+        qweather_key:  # 和风天气api key
+        qweather_host:  # 和风天气host地址不带https://
         gaud_map_key:  # 高得地图web服务key
         default_rectangle: false # 开启后将一直显示rectangle位置的天气，否则将获取访问者的地理位置与天气
         rectangle: 112.6534116,27.96920845 # 获取访问者位置失败时会显示该位置的天气，同时该位置为开启default_rectangle后的位置
