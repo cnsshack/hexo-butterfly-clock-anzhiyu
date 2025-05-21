@@ -22,8 +22,9 @@ hexo.extend.filter.register('after_generate', function (locals) {
       loading: config.loading ? urlFor(config.loading) : "https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/loading.gif",
       clock_css: config.clock_css ? urlFor(config.clock_css) : "https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.css",
       clock_js: config.clock_js ? urlFor(config.clock_js) : "https://cdn.cbd.int/hexo-butterfly-clock-anzhiyu/lib/clock.min.js",
-      ip_api: config.ip_api ? urlFor(config.ip_api) : "https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0",
+      //已失效 ip_api: config.ip_api ? urlFor(config.ip_api) : "https://widget.qweather.net/simple/static/js/he-simple-common.js?v=2.0",
       qweather_key: config.qweather_key ? config.qweather_key : "b16a1fa0e63c46a4b8f28abfb06ae3fe",
+      qweather_host: config.qweather_host ? config.qweather_host : "mx2k5knvbb.re.qweatherapi.com", //新增和风api中的host地址
       gaud_map_key: config.gaud_map_key ? config.gaud_map_key : "e2b04289e870b005374ee030148d64fd&s=rsv3",
       default_rectangle_enable: config.default_rectangle ? config.default_rectangle : false,
       rectangle: config.rectangle ? config.rectangle : "112.6534116,27.96920845",
@@ -66,6 +67,7 @@ hexo.extend.filter.register('after_generate', function (locals) {
   var cpage = location.pathname;
   var epage = '${data.enable_page}';
   var qweather_key = '${data.qweather_key}';
+  var qweather_host = '${data.qweather_host}'; //新增qweather_host变量
   var gaud_map_key = '${data.gaud_map_key}';
   var baidu_ak_key = '${data.baidu_ak_key}';
   var flag = 0;
